@@ -1,41 +1,48 @@
-# Script de Saisie de Mots avec Animation et Interaction VRChat
+# Kawaii Word Bot for JKLM Bomb Party
 
-Ce script Python interactif vous permet de saisir des mots de manière aléatoire avec des animations et une intégration VRChat.
+Ce script Python est un bot pour le jeu Bomb Party disponible sur [https://www.jklm.fun](https://www.jklm.fun). Il a été créé par FreakiV3 de la KawaiiSquad.
 
-## Fonctionnalités
+## Prérequis
 
-- Définissez la position de la souris avec la touche F8.
-- Saisissez un mot avec la touche F4.
-- Choisissez la langue des mots à saisir parmi l'anglais, l'espagnol et le français.
-- Les mots sont saisis de manière aléatoire avec des animations.
-- Intégration avec VRChat : les mots saisis sont envoyés à la chatbox de VRChat.
+- [pynput](https://pynput.readthedocs.io/en/latest/)
+- [pyperclip](https://pyperclip.readthedocs.io/en/latest/)
+- [pyautogui](https://pyautogui.readthedocs.io/en/latest/)
+- [python-osc](https://pypi.org/project/python-osc/)
+- [colorama](https://pypi.org/project/colorama/)
 
-## Configuration
+## Utilisation
 
-1. Installez les dépendances nécessaires en exécutant `pip install -r requirements.txt`.
+1. Exécutez le script Python.
+2. Allez à la fenêtre du jeu et, dès que la partie commence, placez votre souris sur la syllabe et appuyez sur F8.
+3. Lorsque c'est votre tour, appuyez sur F4.
 
-2. Exécutez le script principal avec la commande `python main.py`.
+## Raccourcis clavier
 
-## Instructions d'utilisation
+- **F8** : Définir la position à laquelle la souris se déplacera pour copier la syllabe.
+- **F4** : Copier la syllabe, rechercher des mots et les écrire dans le champ d'écriture.
 
-- Appuyez sur F8 pour définir la position de la souris.
-- Appuyez sur F4 pour saisir un mot.
-- Choisissez la langue des mots à saisir au démarrage du script.
+## Paramètres
+
+Vous pouvez configurer certains paramètres dans le script :
+
+```python
+# Set this to True for long words (Not recommended if you want to look a little bit legit.).
+long_words = True/False
+
+# Set this to True for instant typing (Not recommended if you want to look a little bit legit.)
+instant_typing = True/False
+```
+
+## Démo du Bot
+
+- **Bot avec long_words et instant_typing réglés sur False :**  
+![Bot avec long_words et instant_typing réglés sur False](https://media3.giphy.com/media/o4th7luaOHKE5VSNCP/giphy.gif?cid=790b76111d9a71f16cf4156156fae80597969b954e602ddf&rid=giphy.gif&ct=g)
+
+- **Bot avec long_words et instant_typing réglés sur True :**  
+![Bot avec long_words et instant_typing réglés sur True](https://media1.giphy.com/media/kpj8Y6kZY2M9rX1JPV/giphy.gif?cid=790b76111cd4ef924a3ee94fea352194116eae4ccdda2ff9&rid=giphy.gif&ct=g)
 
 ## Crédits
 
-Ce script a été créé par FreakiV3 de la KawaiiSquad.
+- **Auteur :** FreakiV3 de la KawaiiSquad
 
-## Remarques
-
-- Assurez-vous que VRChat est en cours d'exécution et que l'adresse IP et le port VRChat sont corrects dans le script.
-
-- N'oubliez pas de respecter les conditions d'utilisation de VRChat lors de l'utilisation de ce script.
-
-## Auteur
-
-- FreakiV3 (KawaiiSquad)
-
-## Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Profitez du bot! 🌈
